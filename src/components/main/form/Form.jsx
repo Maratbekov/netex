@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 import style from './Form.module.css'
 const Form = () => {
   return (
@@ -21,13 +21,13 @@ const Form = () => {
         <button className={style.formButton}>Войти в аккаунт</button>
 
         <div className={style.formLink}>
-        <a href="#">Забыл(а) пароль?</a>
+        <Link>Забыл(а) пароль?</Link>
         </div>
       </form>
 
       <footer id={style.footer}>
-         <a href="#" className={style.footerLink}>Ещё нет аккаунта? </a>
-         <a href="#" className={style.footerLinkTwo}>ЗАРЕГИСТРИРОВАТЬСЯ</a>
+         <Link className={style.footerLink}>Ещё нет аккаунта? </Link>
+         <Link to='registration' className={style.footerLinkTwo}>ЗАРЕГИСТРИРОВАТЬСЯ</Link>
       </footer>
      </div>
     </section>
